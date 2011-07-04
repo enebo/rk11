@@ -1,0 +1,3 @@
+Potential demo code for RubyKaigi 11.
+
+To run you can just 'rake run_ruby' or 'rake run_java'.  If you use JRuby for running rake make sure you specify '-Xlaunch.inproc=false'.
