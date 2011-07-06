@@ -89,7 +89,7 @@ public class BubbleMarkUIExample extends ExampleBase {
             }
         });
 
-        final UICheckBox collide = new UICheckBox("Enable ball-ball collision");
+        final UICheckBox collide = new UICheckBox("Enable ball collision");
         collide.setLayoutData(new AnchorLayoutData(Alignment.TOP_LEFT, vsync, Alignment.BOTTOM_LEFT, 0, -5));
         collide.setSelectable(true);
         collide.setSelected(!skipBallCollide);

@@ -97,11 +97,11 @@ class BubbleMarkUIExample < ExampleBase2
       v.add_action_listener { |event|  canvas.vsync_enabled = vsync.selected? }
     end
 
-    collide = UICheckBox.new("Enable ball-ball collision").tap do |c|
+    collide = UICheckBox.new("Enable ball collision").tap do |c|
       c.layout_data = anchor(vsync, 0, -5)
       c.selectable = true
       c.selected = !@skip_ball_collide
-      c.addActionListener { |event| @skip_ball_collide = !collide.selected? }
+      c.add_action_listener { |e| @skip_ball_collide = !collide.selected? }
     end
 
     balls_label = UILabel.new "# of balls:"
