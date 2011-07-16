@@ -3,7 +3,7 @@ require 'java'
 require 'dist/rk11.jar'
 require 'lib/lwjgl/lwjgl.jar'
 require 'lib/lwjgl/jinput.jar'
-Dir[File.dirname(__FILE__) + 'lib/*.jar'].each { |jar_file| require jar_file }
+Dir[File.dirname(__FILE__) + '/lib/*.jar'].each { |jar_file| p require(jar_file) }
 
 java_import com.ardor3d.example.benchmark.ball.BallComponent
 java_import com.ardor3d.example.ExampleBase2
